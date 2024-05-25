@@ -1,22 +1,24 @@
-*{
+* {
     box-sizing: border-box;
-}
-body{
+  }
+  
+  body {
     background-color: #131720;
     font-family: sans-serif;
-
-}
-h3{
+  }
+  
+  h3 {
     color: white;
-}
-.topnav{
+  }
+  
+  .topnav {
     overflow: hidden;
     background-color: #131720;
     padding: 10px;
-}
-
-.topnav a{
-    float:left;
+  }
+  
+  .topnav a {
+    float: left;
     display: block;
     color: white;
     text-align: center;
@@ -24,47 +26,113 @@ h3{
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
-
-}
-
-.topnav .search-container{
+  }
+  
+  .topnav .search-container {
     float: right;
-}
-
-form{
+  }
+  
+  form {
     background-color: #151f30;
     width: 300px;
     height: 43px;
     border-radius: 11px;
     display: flex;
     align-items: center;
-}
-
-input{
+  }
+  
+  input {
     all: unset;
     font: 15px system-ui;
-    color:#fff;
-    height:100%;
-    width:100%;
+    color: #fff;
+    height: 100%;
+    width: 100%;
     padding: 6px 9px;
-
-}
-
-.thumbnail{
+  }
+  
+  .thumbnail {
     height: 350px;
     width: 300px;
     border-radius: 19px;
-}
-
-.column{
+  }
+  
+  .column {
     float: left;
-    width: 25%;
+    width: 30%;
     padding: 10px 8px;
-}
-
-.card{
+  }
+  
+  .card {
     border-radius: 19px;
-    padding:15px;
+    padding: 15px;
     text-align: center;
     background-color: #151f30;
-}
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile devices (max-width: 480px) */
+  @media only screen and (max-width: 480px) {
+    .topnav a {
+      font-size: 1rem;
+      padding: 10px 12px;
+    }
+    form {
+      width: 200px;
+    }
+    .thumbnail {
+      height: 250px;
+      width: 200px;
+    }
+    .column {
+      width: 100%;
+      padding: 10px 0;
+    }
+    .card {
+      padding: 10px;
+    }
+  }
+  
+  /* Tablets (max-width: 768px) */
+  @media only screen and (max-width: 768px) {
+    .topnav a {
+      font-size: 1.1rem;
+      padding: 12px 14px;
+    }
+    form {
+      width: 250px;
+    }
+    .thumbnail {
+      height: 300px;
+      width: 250px;
+    }
+    .column {
+      width: 50%;
+      padding: 10px 4px;
+    }
+    .card {
+      padding: 12px;
+    }
+  }
+  
+  /* Desktops (min-width: 1024px) */
+  @media only screen and (min-width: 1024px) {
+    .topnav a {
+      font-size: 1.3rem;
+      padding: 16px 18px;
+    }
+    form {
+      width: 350px;
+    }
+    .thumbnail {
+      height: 400px;
+      width: 350px;
+    }
+    .column {
+      width: 33.33%;
+      padding: 10px 8px;
+    }
+    .card {
+      padding: 15px;
+    }
+  }
